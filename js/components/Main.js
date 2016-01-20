@@ -101,7 +101,7 @@ class Main extends React.Component {
         <div className="row">
           <div className="col m9 s12">
             <div className="flow-text">
-              <a stlye="" target="_blank" href="https://twitter.com/RGRjs">@RGRjs</a>
+             
             </div>
           </div>
           <div className="col m3 hide-on-small-only">
@@ -162,7 +162,7 @@ Main = Relay.createContainer(Main, {
     store: () => Relay.QL`
       fragment on Store {
         id,
-        linkConnection(first: $limit,email:$email) {
+        linkConnection(first: $limit) {
           edges {
             node {
               id,
